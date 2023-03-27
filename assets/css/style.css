@@ -1,0 +1,370 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    width: 85vw;
+    margin: auto;
+    padding: 10px;
+}
+
+header .row {
+    display: flex;
+}
+
+.leftarea {
+    width: 20%;
+    border-right: 1px solid rgb(232, 232, 232);
+}
+
+.centerearea {
+    width: 50%;
+    justify-content: space-between;
+    border-right: 1px solid rgb(232, 232, 232);
+}
+
+.centerearea .top {
+    justify-content: space-between;
+    display: flex;
+    width: 95%;
+    padding: 10px 25px;
+}
+
+.centerearea .top h2 {
+    font-family: sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.centerearea .tweet .post {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.option {
+    width: 190px;
+    display: flex;
+}
+
+.postoption {
+    margin-left: 75px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(232, 232, 232);
+}
+
+.r-1cvl2hr {
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.centerearea .tweet img {
+    width: 40px;
+    border-radius: 25px;
+    margin-right: 15px;
+}
+
+.centerearea .tweet p {
+    font-family: sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.postbtn {
+    background-color: rgb(124, 182, 220);
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: none;
+    margin-right: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.rightarea {
+    width: 25%;
+}
+
+.rightarea .searchbar input {
+    border: none;
+    background-color: rgb(239, 243, 244);
+    outline: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.rightarea .searchbar .fa-magnifying-glass {
+    padding: 0px 12px;
+    color: rgb(188, 186, 186);
+    cursor: pointer;
+}
+
+.rightarea .searchbar {
+    display: flex;
+    background-color: rgb(239, 243, 244);
+    padding: 15px;
+    border-radius: 25px;
+    width: 97%;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.leftarea .menu img {
+    width: 25px;
+    margin-right: 20px;
+}
+
+.leftarea .menu {
+    padding: 10px 0px;
+    align-items: center;
+    display: flex;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.leftarea .menu p {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.leftarea .menu .btn {
+    padding: 15px 30px;
+    width: 60%;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 25px;
+    background-color: rgb(29, 155, 240);
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.trand {
+    background-color: rgb(247, 249, 249);
+    margin: 20px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.trandlink {
+    margin: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+.trand h2 {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 8px;
+}
+
+.trand .box {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.trand .box:hover {
+    background-color: rgb(244, 244, 244);
+    transition: 0.6s;
+}
+
+.trand .box p {
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+.trand .box h3 {
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 8px 0px;
+}
+
+.mobileleftarea {
+    display: none;
+}
+
+@media(max-width: 900px) {
+    .leftarea {
+        display: none;
+    }
+
+    .centerearea {
+        width: 100%;
+        border: none;
+    }
+
+    .rightarea {
+        display: none;
+    }
+}
+
+@media(max-width: 700px) {
+    .feedpost .name {
+        flex-direction: column;
+    }
+}
+
+.feedpost {
+    display: flex;
+    margin-top: 5%;
+    border-bottom: 1px solid rgb(232, 232, 232);
+    padding: 20px;
+    cursor: pointer;
+}
+
+.feedpost:hover {
+    background-color: rgb(249, 249, 249);
+    transition: 0.2s;
+}
+
+.feedpost .logo {
+    margin-right: 10px;
+    border-radius: 100px;
+}
+
+.feedpost .name {
+    display: flex;
+    font-family: sans-serif;
+    width: 100%;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.feedpost .name .dots {
+    text-align: right;
+    width: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.feedpost .name h4 {
+    padding-right: 10px;
+    font-family: sans-serif;
+}
+
+.feedpost .name .dis {
+    font-family: sans-serif;
+    padding-top: 10px;
+}
+
+.postimg {
+    margin-top: 20px;
+    border-radius: 25px;
+}
+
+.feedpost .btns {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.feedpost .btns .line {
+    display: flex;
+    align-items: center;
+}
+
+.feedpost .btns .line p {
+    font-family: sans-serif;
+    font-size: 13px;
+    padding-left: 8px;
+    color: rgb(138, 137, 137);
+}
+
+.postlogo {
+    border-radius: 50%;
+}
+
+video {
+    border-radius: 25px;
+    height: 312px;
+    margin-top: 15px;
+}
+
+.hastage:hover {
+    color: rgb(29, 155, 240);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.hastage {
+    color: rgb(29, 155, 240);
+    cursor: pointer;
+}
+
+.profile {
+    display: flex;
+    margin-top: 10%;
+    cursor: pointer;
+    width: 96%;
+}
+
+.profile img {
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.profile h3 {
+    font-family: sans-serif;
+    font-size: 15px;
+    width: 118px;
+}
+
+.profile p {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: rgb(109, 105, 105);
+    padding-top: 3px;
+}
+
+.profile .dots .fa-ellipsis {
+    color: rgb(135, 135, 135);
+    width: 60px;
+    text-align: center;
+}
+
+.whoimg {
+    border-radius: 50%;
+}
+
+.dotss {
+    text-align: right;
+    width: 100%;
+}
+
+.dotss .btn {
+    background-color: #000;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.link a {
+    text-decoration: none;
+    color: rgb(137, 135, 135);
+    padding-right: 10px;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+.showmore p {
+    cursor: pointer;
+    color: rgb(29, 155, 240);
+}
